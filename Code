@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet"href="styles.css"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="product">
+            <div class="product-image">
+                <img src="product-image.jpg" alt="Product Image">
+            </div>
+            <div class="product-info">
+                <h1>Product Name</h1>
+                <p>Product Description</p>
+                <p>Price: $99.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </section>
+        <section class="customer-reviews">
+            <h2>Customer Reviews</h2>
+            <ul>
+                <li>
+                    <p>Rating: 5/5</p>
+                    <p>Review: Great product!</p>
+                </li>
+                <li>
+                    <p>Rating: 4/5</p>
+                    <p>Review: Good product, but could be better.</p>
+                </li>
+            </ul>
+        </section>
+        <section class="related-products">
+            <h2>Related Products</h2>
+            <ul>
+                <li>
+                    <img src="related-product1.jpg" alt="Related Product 1">
+                    <p>Related Product 1</p>
+                </li>
+                <li>
+                    <img src="related-product2.jpg" alt="Related Product 2">
+                    <p>Related Product 2</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
+
+
+#CSS
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2em;
+}
+
+.product-image {
+    flex-basis: 40%;
+    margin-right: 2em;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-info {
+    flex-basis: 60%;
+}
+
+.product-info h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-info p {
+    margin-bottom: 20px;
+}
+
+.product-info button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.customer-reviews {
+    padding: 2em;
+}
+
+.customer-reviews h2 {
+    margin-bottom: 10px;
+}
+
+.customer-reviews ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.customer-reviews li {
+    margin-bottom: 20px;
+}
+
+.customer-reviews p {
+    margin-bottom: 10px;
+}
+
+.related-products {
+    padding: 2em;
+}
+
+.related-products h2 {
+    margin-bottom: 10px;
+}
+
+.related-products ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.related-products li {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.related-products img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .product {
+        flex-direction: column;
+    }
+    .product-image {
+        margin-right: 0;
+    }
+}
